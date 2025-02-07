@@ -4,46 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-  <link rel="stylesheet" href="Webbpro3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
 </head>
 <body>
-
-
     <div id="Flex-container">
         <div>
-            <img src="dice1.png" class="dice" alt="">
+            <img src="dice1.png" class="dice image is-64x64 " alt="">
             <br>
         <input type="checkbox" class="checkbox"/>
         </div>
         <div>
-            <img src="dice2.png" class="dice" alt="">
+            <img src="dice2.png" class="dice image is-64x64 " alt="">
             <br>
         <input type="checkbox" class="checkbox"/>
         </div>
         <div>
-            <img src="dice3.png" class="dice" alt="">
+            <img src="dice3.png" class="dice image is-64x64 " alt="">
             <br>
             <input type="checkbox" class="checkbox"/>
         </div>
         <div>
-            <img src="dice4.png" class="dice" alt="">
+            <img src="dice4.png" class="dice image is-64x64 " alt="">
             <br>
             <input type="checkbox" class="checkbox"/>
         </div>
         <div>
-            <img src="dice5.png" class="dice" alt="">
+            <img src="dice5.png" class="dice image is-64x64 " alt="">
             <br>
             <input type="checkbox" class="checkbox"/>
         </div>
         <button onclick="rool()">Kasta tärningar!</button>
     <script>
-
+    
         dice_values = [1,1,1,1,1]
         function rool(){
-
+    
             dice = document.getElementsByClassName("dice")
             for(let i = 0;i < 5; i++){
                 checkboxes = document.getElementsByTagName("input")
@@ -54,11 +49,11 @@
                     dice[i].src = "dice" + number + ".png"
                     dice_values[i] = number
                 }
-                
+                    
             }
-
+    
             console.log(dice_values)
         }
     </script>
-</body>
+    </body>
 </html>

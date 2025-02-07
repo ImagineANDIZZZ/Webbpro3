@@ -17,12 +17,15 @@ button{
 }
 
 .dice{
-    width: 130px;
-    height: auto;
+    width: 100px;
+    height: 100px;
     display: inline-block;
     margin-top: 30px;
 }
 
 .checkbox{
     
+    margin: 25px;
+    width: 50px;
+    height: 20px;
 }
