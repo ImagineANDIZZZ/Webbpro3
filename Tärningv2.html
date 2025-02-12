@@ -7,33 +7,48 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
 </head>
 <body>
-    <div id="Flex-container">
-        <div>
-            <img src="dice1.png" class="dice image is-64x64 " alt="">
-            <br>
-        <input type="checkbox" class="checkbox"/>
+    <div class="columns is-multiline">
+        <div class="column is-half is-offset-one-quarter">
+            <div class="columns">
+                <div class="column">
+            
+                    <img src="dice1.png" class="dice image is-64x64 " alt="">
+                    <br>
+                <input type="checkbox" class="checkbox"/>
+                </div>
+                <div class="column">
+                    <img src="dice2.png" class="dice image is-64x64 " alt="">
+                    <br>
+                <input type="checkbox" class="checkbox"/>
+                </div>
+                <div class="column">
+                    <img src="dice3.png" class="dice image is-64x64 " alt="">
+                    <br>
+                    <input type="checkbox" class="checkbox"/>
+                </div>
+                <div class="column">
+                    <img src="dice4.png" class="dice image is-64x64 " alt="">
+                    <br>
+                    <input type="checkbox" class="checkbox"/>
+                </div>
+                <div class="column">
+                    <img src="dice5.png" class="dice image is-64x64 " alt="">
+                    <br>
+                    <input type="checkbox" class="checkbox"/>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="dice2.png" class="dice image is-64x64 " alt="">
-            <br>
-        <input type="checkbox" class="checkbox"/>
-        </div>
-        <div>
-            <img src="dice3.png" class="dice image is-64x64 " alt="">
-            <br>
-            <input type="checkbox" class="checkbox"/>
-        </div>
-        <div>
-            <img src="dice4.png" class="dice image is-64x64 " alt="">
-            <br>
-            <input type="checkbox" class="checkbox"/>
-        </div>
-        <div>
-            <img src="dice5.png" class="dice image is-64x64 " alt="">
-            <br>
-            <input type="checkbox" class="checkbox"/>
-        </div>
-        <button onclick="rool()">Kasta tärningar!</button>
+        <div class="column is-half is-offset-one-quarter"><button  class="button" onclick="rool()">Kasta tärningar!</button></div>
+    </div>
+    <table>
+        <thead>
+
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+        
     <script>
     
         dice_values = [1,1,1,1,1]
