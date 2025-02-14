@@ -1,74 +1,233 @@
 <!DOCTYPE html>
 <html lang="en" class="theme-light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="columns is-multiline">
         <div class="column is-half is-offset-one-quarter">
             <div class="columns">
                 <div class="column">
-            
+
                     <img src="dice1.png" class="dice image is-64x64 " alt="">
                     <br>
-                <input type="checkbox" class="checkbox"/>
+                    <input type="checkbox" class="checkbox" />
                 </div>
                 <div class="column">
                     <img src="dice2.png" class="dice image is-64x64 " alt="">
                     <br>
-                <input type="checkbox" class="checkbox"/>
+                    <input type="checkbox" class="checkbox" />
                 </div>
                 <div class="column">
                     <img src="dice3.png" class="dice image is-64x64 " alt="">
                     <br>
-                    <input type="checkbox" class="checkbox"/>
+                    <input type="checkbox" class="checkbox" />
                 </div>
                 <div class="column">
                     <img src="dice4.png" class="dice image is-64x64 " alt="">
                     <br>
-                    <input type="checkbox" class="checkbox"/>
+                    <input type="checkbox" class="checkbox" />
                 </div>
                 <div class="column">
                     <img src="dice5.png" class="dice image is-64x64 " alt="">
                     <br>
-                    <input type="checkbox" class="checkbox"/>
+                    <input type="checkbox" class="checkbox" />
                 </div>
             </div>
         </div>
-        <div class="column is-half is-offset-one-quarter"><button  class="button" onclick="rool()">Kasta tärningar!</button></div>
+        <div class="column is-half is-offset-one-quarter"><button class="button" onclick="rool()">Kasta
+                tärningar!</button></div>
     </div>
-    <table>
-        <thead>
+    <div class="columns">
+        <div class="column">
+            <table class="Spelare_1 content is-large table column">
+            <thead>SPELARE 1
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ettor</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Tvåor</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Treor</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Fyror</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Femmor</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Sexor</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Summa</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Bonus</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Ett par</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Två par</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Tretal</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Fyrtal</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Liten stege</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Stor stege</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Kåk</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Chans</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Yatzy</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Totalt:</td>
+                    <td>tomt</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <table class="Spelare_2 content is-large table is-offset-three-quarter">
+            <thead>SPELARE 2
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ettor</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Tvåor</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Treor</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Fyror</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Femmor</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Sexor</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Summa</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Bonus</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Ett par</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Två par</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Tretal</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Fyrtal</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Liten stege</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Stor stege</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Kåk</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Chans</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Yatzy</td>
+                    <td>tomt</td>
+                </tr>
+                <tr>
+                    <td>Totalt:</td>
+                    <td>tomt</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-        </thead>
-        <tbody>
-            
-        </tbody>
-    </table>
-        
+
+
     <script>
-    
-        dice_values = [1,1,1,1,1]
-        function rool(){
-    
+
+        dice_values = [1, 1, 1, 1, 1]
+        function rool() {
+
             dice = document.getElementsByClassName("dice")
-            for(let i = 0;i < 5; i++){
+            for (let i = 0; i < 5; i++) {
                 checkboxes = document.getElementsByTagName("input")
-                if (checkboxes[i].checked){
+                if (checkboxes[i].checked) {
                     console.log("låst tärning")
-                }else{
-                    number = Math.floor(Math.random()*6) + 1
+                } else {
+                    number = Matd.floor(Math.random() * 6) + 1
                     dice[i].src = "dice" + number + ".png"
                     dice_values[i] = number
                 }
-                    
+
             }
-    
+
             console.log(dice_values)
         }
     </script>
-    </body>
+</body>
+
 </html>
