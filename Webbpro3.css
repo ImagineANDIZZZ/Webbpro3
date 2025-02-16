@@ -1,0 +1,31 @@
+#Flex-container{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+input[type=checkbox]{
+    scale: 170%;
+}
+
+button{
+    margin: 20%;
+    width: 30%;
+    height: 20%;
+    background-color: rgb(69, 162, 165);
+}
+
+.dice{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.checkbox{
+    
+    margin: 25px;
+    width: 50px;
+    height: 20px;
+}
