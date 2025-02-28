@@ -20,22 +20,22 @@
                     <input type="checkbox" class="checkbox" />
                 </div>
                 <div class="column">
-                    <img src="dice2.png" class="dice image is-64x64 " alt="">
+                    <img src="dice1.png" class="dice image is-64x64 " alt="">
                     <br>
                     <input type="checkbox" class="checkbox" />
                 </div>
                 <div class="column">
-                    <img src="dice3.png" class="dice image is-64x64 " alt="">
+                    <img src="dice1.png" class="dice image is-64x64 " alt="">
                     <br>
                     <input type="checkbox" class="checkbox" />
                 </div>
                 <div class="column">
-                    <img src="dice4.png" class="dice image is-64x64 " alt="">
+                    <img src="dice1.png" class="dice image is-64x64 " alt="">
                     <br>
                     <input type="checkbox" class="checkbox" />
                 </div>
                 <div class="column">
-                    <img src="dice5.png" class="dice image is-64x64 " alt="">
+                    <img src="dice1.png" class="dice image is-64x64 " alt="">
                     <br>
                     <input type="checkbox" class="checkbox" />
                 </div>
@@ -50,7 +50,12 @@
         <button class="Reset button is-black is-medium is-rounded">Reset</button>
         <button class="Yatzy button is-black is-medium is-rounded">Yatzy</button><br>
         <button class="Byt_tema button is-black is-medium is-rounded">Byt tema</button>
-        <button class="Sida_2 button is-black is-medium is-rounded"><a href="Sida_2.html"></a>Sida 2</button>
+        <a href="Sida_2.html">
+        <button class="Sida_2 button is-black is-medium is-rounded">Sida 2</button>
+        </a>
+        <a href="Sida_3.html">
+            <button class="Sida_3 button is-black is-medium is-rounded">Sida 3</button>
+        </a>
     </div>
     <div class="columns">
         <div class="column">
@@ -235,14 +240,14 @@
                 if (checkboxes[i].checked) {
                     console.log("låst tärning")
                 } else {
-                    number = Matd.floor(Math.random() * 6) + 1
+                    number = Math.floor(Math.random() * 6) + 1
                     dice[i].src = "dice" + number + ".png"
                     dice_values[i] = number
                 }
 
             }
 
-            console.log(dice_values)
+            // console.log(dice_values)
         }
     </script>
 </body>
