@@ -48,8 +48,7 @@
     </div>
     <div class="buttons column is-offset-one-quarter">
         <button class="Reset button is-black is-medium is-rounded">Reset</button>
-        <button class="Yatzy button is-black is-medium is-rounded">Yatzy</button><br>
-        <button class="Byt_tema button is-black is-medium is-rounded">Byt tema</button>
+        <button class="Byt_tema button is-black is-medium is-rounded" onclick="toggleMode()">Byt tema</button><br>
         <a href="Sida_2.html">
         <button class="Sida_2 button is-black is-medium is-rounded">Sida 2</button>
         </a>
@@ -233,7 +232,6 @@
 
         dice_values = [1, 1, 1, 1, 1]
         function rool() {
-
             dice = document.getElementsByClassName("dice")
             for (let i = 0; i < 5; i++) {
                 checkboxes = document.getElementsByTagName("input")
@@ -244,11 +242,14 @@
                     dice[i].src = "dice" + number + ".png"
                     dice_values[i] = number
                 }
-
             }
-
-            // console.log(dice_values)
         }
+        function toggleMode(){
+            html = document.getElementsByTagName("html");
+            html[0].classList.toggle("theme-dark");
+            html[0].classList.toggle("theme-light");
+        }
+
     </script>
 </body>
 

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html class="theme-light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Poängformulär</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
   <section class="section">
@@ -13,7 +14,6 @@
       <h1 class="title">Poängformulär</h1>
       <form>
         
-        <!-- Namn -->
         <div class="field">
           <label class="label">Namn</label>
           <div class="control">
@@ -21,7 +21,6 @@
           </div>
         </div>
 
-        <!-- E-post -->
         <div class="field">
           <label class="label">E-post</label>
           <div class="control">
@@ -29,7 +28,6 @@
           </div>
         </div>
 
-        <!-- Meddelande -->
         <div class="field">
           <label class="label">Meddelande</label>
           <div class="control">
@@ -37,7 +35,6 @@
           </div>
         </div>
 
-        <!-- Knappar -->
         <div class="field is-grouped">
           <div class="control">
             <button class="button is-primary">Skicka</button>
@@ -50,7 +47,7 @@
     </div>
   </section>
   <div>
-    <button class="Byt_tema button is-black is-medium is-rounded">Byt tema</button>
+    <button class="Byt_tema button is-black is-medium is-rounded" onclick="toggleMode()">Byt tema</button>
     <a href="Sida_3.html">
     <button class="Sida_3 button is-black is-medium is-rounded">Sida 3</button>
     </a>
