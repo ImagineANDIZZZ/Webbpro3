@@ -47,19 +47,19 @@
         </div>
     </div>
     <div class="buttons column is-offset-one-quarter">
-        <button class="Reset button is-black is-medium is-rounded">Reset</button>
+        <button id="Reset1" class="Reset button is-black is-medium is-rounded">Reset</button>
         <button class="Byt_tema button is-black is-medium is-rounded" onclick="toggleMode()">Byt tema</button><br>
         <a href="Sida_2.html">
         <button class="Sida_2 button is-black is-medium is-rounded">Sida 2</button>
         </a>
         <a href="Sida_3.html">
-            <button class="Sida_3 button is-black is-medium is-rounded">Sida 3</button>
+        <button class="Sida_3 button is-black is-medium is-rounded">Sida 3</button>
         </a>
     </div>
     <div class="columns">
         <div class="column">
             <table class="Spelare_1 content is-large table column">
-                <thead>
+                <thead>                   
                 </thead>
                 <tbody>
                     <tr>
@@ -69,79 +69,80 @@
                     </tr>
                     <tr>
                         <td>Ettor</td>
-                        <td><input class="input is-small" type="text"/></td>
+                        <td><input type="number" class="p1" onchange="checkBonus(1);"></td>
                     </tr>
                     <tr>
                         <td>Tvåor</td>
-                        <td><input class="input is-small" type="text"/></td>
+                        <td><input type="number" class="p1" onchange="checkBonus(1);"></td>
                     </tr>
                     <tr>
                         <td>Treor</td>
-                        <td><input class="input is-small" type="text"/></td>
+                        <td><input type="number" class="p1" onchange="checkBonus(1);"></td>
                     </tr>
                     <tr>
                         <td>Fyror</td>
-                        <td><input class="input is-small" type="text"/></td>
+                        <td><input type="number" class="p1" onchange="checkBonus(1);"></td>
                     </tr>
                     <tr>
                         <td>Femmor</td>
-                        <td><input class="input is-small" type="text"/></td>
+                        <td><input type="number" class="p1" onchange="checkBonus(1);"></td>
                     </tr>
                     <tr>
                         <td>Sexor</td>
-                        <td><input class="input is-small" type="text"/></td>
+                        <td><input type="number" class="p1" onchange="checkBonus(1);"></td>
                     </tr>
                     <tr>
                         <td>SUMMA:</td>
-                        <td><input class="input is-small" type="text"/></td>
+                        <td><input type="number" class="p1" onchange="Totalt(1);"></td>
                     </tr>
                     <tr>
                         <td>BONUS</td>
-                        <td><input class="input is-small" type="text"/></td>
+                        <td><input type="number" class="p1" onchange="Totalt(1);"></td>
                     </tr>
                     <tr>
                         <td>Ett par</td>
-                        <td><input class="input is-small" type="text"/></td>
+                        <td><input type="number" class="p1" onchange="Totalt(1);"></td>
                     </tr>
                     <tr>
                         <td>Två par</td>
-                        <td><input class="input is-small" type="text"/></td>
+                        <td><input type="number" class="p1" onchange="Totalt(1);"></td>
                     </tr>
                     <tr>
                         <td>Tretal</td>
-                        <td><input class="input is-small" type="text"/></td>
+                        <td><input type="number" class="p1" onchange="Totalt(1);"></td>
                     </tr>
                     <tr>
                         <td>Fyrtal</td>
-                        <td><input class="input is-small" type="text"/></td>
+                        <td><input type="number" class="p1" onchange="Totalt(1);"></td>
                     </tr>
                     <tr>
                         <td>Liten stege</td>
-                        <td><input class="input is-small" type="text"/></td>
+                        <td><input type="number" class="p1" onchange="Totalt(1);"></td>
                     </tr>
                     <tr>
                         <td>Stor stege</td>
-                        <td><input class="input is-small" type="text"/></td>
+                        <td><input type="number" class="p1" onchange="Totalt(1);"></td>
                     </tr>
                     <tr>
                         <td>Kåk</td>
-                        <td><input class="input is-small" type="text"/></td>
+                        <td><input type="number" class="p1" onchange="Totalt(1);"></td>
                     </tr>
                     <tr>
                         <td>Chans</td>
-                        <td><input class="input is-small" type="text"/></td>
+                        <td><input type="number" class="p1" onchange="Totalt(1);"></td>
                     </tr>
                     <tr>
                         <td>Yatzy</td>
-                        <td><input class="input is-small" type="text"/></td>
+                        <td><input type="number" class="p1" onchange="Totalt(1);"></td>
                     </tr>
                     <tr>
                         <td>Totalt:</td>
-                        <td><input class="input is-small" type="text"/></td>
+                        <td><input type="number" class="p1"></td>
                     </tr>
                 </tbody>
             </table>
         </div>
+        <div></div>
         <table class="Spelare_2 content is-large table is-offset-three-quarter">
             <thead>
             </thead>
@@ -153,74 +154,75 @@
                 </tr>
                 <tr>
                     <td>Ettor</td>
-                    <td><input class="input is-small" type="text"/></td></tr>
+                    <td><input type="number" class="p2" onchange="checkBonus(2);"></td>
+                </tr>
                 <tr>
                     <td>Tvåor</td>
-                    <td><input class="input is-small" type="text"/></td>
+                    <td><input type="number" class="p2" onchange="checkBonus(2);"></td>
                 </tr>
                 <tr>
                     <td>Treor</td>
-                    <td><input class="input is-small" type="text"/></td>
+                    <td><input type="number" class="p2" onchange="checkBonus(2);"></td>
                 </tr>
                 <tr>
                     <td>Fyror</td>
-                    <td><input class="input is-small" type="text"/></td>
+                    <td><input type="number" class="p2" onchange="checkBonus(2);"></td>
                 </tr>
                 <tr>
                     <td>Femmor</td>
-                    <td><input class="input is-small" type="text"/></td>
+                    <td><input type="number" class="p2" onchange="checkBonus(2);"></td>
                 </tr>
                 <tr>
                     <td>Sexor</td>
-                    <td><input class="input is-small" type="text"/></td>
+                    <td><input type="number" class="p2" onchange="checkBonus(2);"></td>
                 </tr>
                 <tr>
                     <td>SUMMA:</td>
-                    <td><input class="input is-small" type="text"/></td>
+                    <td><input type="number" class="p2" onchange="Totalt(2);"></td>
                 </tr>
                 <tr>
                     <td>BONUS</td>
-                    <td><input class="input is-small" type="text"/></td>
+                    <td><input type="number" class="p2" onchange="Totalt(2);"></td>
                 </tr>
                 <tr>
                     <td>Ett par</td>
-                    <td><input class="input is-small" type="text"/></td>
+                    <td><input type="number" class="p2" onchange="Totalt(2);"></td>
                 </tr>
                 <tr>
                     <td>Två par</td>
-                    <td><input class="input is-small" type="text"/></td>
+                    <td><input type="number" class="p2" onchange="Totalt(2);"></td>
                 </tr>
                 <tr>
                     <td>Tretal</td>
-                    <td><input class="input is-small" type="text"/></td>
+                    <td><input type="number" class="p2" onchange="Totalt(2);"></td>
                 </tr>
                 <tr>
                     <td>Fyrtal</td>
-                    <td><input class="input is-small" type="text"/></td>
+                    <td><input type="number" class="p2" onchange="Totalt(2);"></td>
                 </tr>
                 <tr>
                     <td>Liten stege</td>
-                    <td><input class="input is-small" type="text"/></td>
+                    <td><input type="number" class="p2" onchange="Totalt(2);"></td>
                 </tr>
                 <tr>
                     <td>Stor stege</td>
-                    <td><input class="input is-small" type="text"/></td>
+                    <td><input type="number" class="p2" onchange="Totalt(2);"></td>
                 </tr>
                 <tr>
                     <td>Kåk</td>
-                    <td><input class="input is-small" type="text"/></td>
+                    <td><input type="number" class="p2" onchange="Totalt(2);"></td>
                 </tr>
                 <tr>
                     <td>Chans</td>
-                    <td><input class="input is-small" type="text"/></td>
+                    <td><input type="number" class="p2" onchange="Totalt(2);"></td>
                 </tr>
                 <tr>
                     <td>Yatzy</td>
-                    <td><input class="input is-small" type="text"/></td>
+                    <td><input type="number" class="p2" onchange="Totalt(2);"></td>
                 </tr>
                 <tr>
                     <td>Totalt:</td>
-                    <td><input class="input is-small" type="text"/></td>
+                    <td><input type="number" class="p2"></td>
                 </tr>
             </tbody>
         </table>
@@ -249,6 +251,49 @@
             html[0].classList.toggle("theme-dark");
             html[0].classList.toggle("theme-light");
         }
+
+
+
+        function checkBonus(player){
+                    let p = "";
+                    if(player == 1){
+                        p = "p1";
+                    }else{
+                        p = "p2";
+                    }
+
+                    scores = document.getElementsByClassName(p);
+
+                    sum = parseInt(scores[0].value) + parseInt(scores[1].value) + parseInt(scores[2].value) + parseInt(scores[3].value) + parseInt(scores[4].value) + parseInt(scores[5].value)
+                    if (sum >= 63){
+                        scores[7].value = 50;
+                    }else {
+                        scores[7].value = 0;
+                    }
+
+                    scores[6].value = sum;
+
+
+                }
+                    function Totalt(player) {
+                        let p = "";
+                    if(player == 1){
+                        p = "p1";
+                    }else{
+                        p = "p2";
+                    }
+
+                    scores = document.getElementsByClassName(p); 
+
+                    if (scores.length < 16){
+                        }
+                        let totalt = 0;
+                        for (let i = 6; i <= 16; i++) {
+                            totalt += parseInt(scores[i].value) || 0;
+                        }
+                            scores[17].value = totalt;
+                    }
+
 
     </script>
 </body>
