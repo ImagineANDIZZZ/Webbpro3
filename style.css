@@ -1,8 +1,20 @@
 .Spelare_1{
-    margin-left: 40px;
+    margin-left: 50px;
+    padding: 0px;
+    overflow: hidden !important;
 }
 .Spelare_2{
-    margin-right: 70px;
+margin-right: 50px;
+}
+.dice{
+    margin-top: 20px;
+}
+.kasta_tärning{
+    padding-left: 850px;
+}
+.checkbox{
+    transform: scale(2.5);
+    align-items: center;
 }
 .table td{
     font-size: 15px !important;
@@ -12,12 +24,30 @@
     padding: 0px;
     max-width: 400px;
 }
-#Reset1{
-
-}
 .hund1{
     padding-left: 700px;
 }
-.hund2{
-
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 20px;
+    padding-right: 400px;
+}
+.buttun2{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.buttun3{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+img{
+    max-height: 170px;
 }
