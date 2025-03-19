@@ -42,6 +42,11 @@ margin-right: 50px;
     margin-top: 50px;
     margin-left: 20px;
 }
-img{
-    max-height: 170px;
+.regler{
+    height: 400px;
+    margin-left: 500px;
+    margin-bottom: -500px;
+
 }
+
+  
