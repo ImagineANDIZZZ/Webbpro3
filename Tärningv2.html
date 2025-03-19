@@ -41,13 +41,13 @@
                 </div>
             </div>
         </div>
-        <div class="column is-half kasta_tärning">
-            <button class="button" onclick="rool()">Kasta tärningar!
-            </button>
+        <div class="column is-full kasta_tärning">
+                <button class="button" onclick="rool()">Kasta tärningar!
+        </button>
         </div>
     </div>
     <div class="columns">
-        <div class="">
+        <div class="column">
             <table class="Spelare_1 content is-large table column">
                 <thead>
                 </thead>
@@ -132,9 +132,9 @@
                 </tbody>
             </table>
         </div>
-        <div class="buttons column is-offset-one-quarter">
-            <button class="Reset button is-black is-medium is-rounded">Reset</button>
-            <button class="Byt_tema button is-black is-medium is-rounded" onclick="toggleMode()">Byt tema</button><br>
+        <div class="buttons column">
+            <button class="button is-black is-medium is-rounded" onclick="reset()">Reset</button>
+            <button class="button is-black is-medium is-rounded" onclick="toggleMode()">Byt tema</button>
             <a href="Sida_2.html">
                 <button class="Sida_2 button is-black is-medium is-rounded">Sida 2</button>
             </a>
@@ -142,6 +142,7 @@
                 <button class="Sida_3 button is-black is-medium is-rounded">Sida 3</button>
             </a>
         </div>
+        <div class="column">
         <table class="Spelare_2 content is-large table ">
             <thead>
             </thead>
@@ -225,6 +226,7 @@
                 </tr>
             </tbody>
         </table>
+        </div>
     </div>
     <script>
 
@@ -281,6 +283,12 @@
             }
             scores[17].value = totalt;
         }
+        function reset() {
+    let inputs = document.querySelectorAll(".p1,.p2");
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].value = ""; 
+    }
+    }
     </script>
 
 </body>
